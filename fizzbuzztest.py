@@ -9,8 +9,10 @@ class TestFizzBuzz(unittest.TestCase):
         list[i] = i+1
 
 
-    def test_corrrectness(self):
-        self.assertEqual(fb(), self.list)
+    def test_original_list(self):
+        self.assertEqual(fb(None), self.list)
+        
+    def test_fizz(self):
         self.assertEqual(fb(66), "Fizz")
    
 
