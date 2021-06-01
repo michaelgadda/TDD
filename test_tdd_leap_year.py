@@ -7,6 +7,10 @@ class TestLeapYear(unittest.TestCase):
    
     def test_years_divisible_by_4(self):
         self.assertEqual(ly(8), True)
+
+    def test_years_divisible_by_100(self):
+        self.assertEqual(ly(400), False)
+        self.assertEqual(ly(404), True)
       
    
 
