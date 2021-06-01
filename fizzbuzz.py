@@ -4,8 +4,11 @@ def fizzbuzz(return_num):
 		
 		if (i)%3 == 0: 
 			list[i-1] = "Fizz"
-		else:
 
+		elif i % 5 == 0: 
+			list[i-1] = "Buzz"
+
+		else:
 			list[i-1] = i
 
 	print(list)
