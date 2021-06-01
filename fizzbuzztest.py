@@ -11,7 +11,7 @@ class TestFizzBuzz(unittest.TestCase):
 
     def test_corrrectness(self):
         self.assertEqual(fb(), self.list)
-        
+        self.assertEqual(fb(66), "Fizz")
    
 
 if __name__ == '__main__': 
